@@ -6,8 +6,8 @@
 
 Name: opencpn-plugin-%{plugin}
 Summary: Tidal current plugin for OpenCPN
-Version: 0.0
-Release: 0.1.%{shortcommit}%{?dist}
+Version: 1.3.2
+Release: 1.%{shortcommit}%{?dist}
 License: GPLv2+
 
 Source0: https://github.com/%{owner}/%{project}/archive/%{commit}/%{project}-%{shortcommit}.tar.gz
@@ -20,7 +20,7 @@ BuildRequires: wxGTK3-devel
 BuildRequires: zlib-devel
 
 Requires: opencpn%{_isa}
-Supplements: opencpn%{_isa}
+Enhances: opencpn%{_isa}
 
 %description
 Provides overlay display of tidal current (stream) arrows.
